@@ -314,24 +314,17 @@ h1, h2, h3, h4 {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-<<<<<<< HEAD
 /*------------------------------*/
 /*            Iconos            */
 /*------------------------------*/
 
-
 /* Estilos generales para íconos */
-=======
-
-
-/* 🔵 Estilos generales para íconos */
->>>>>>> f88b7dadc51627e452142d67f0f954e7881bcc68
 .ajustes-opciones a i {
     margin-right: 10px;
     vertical-align: middle;
 }
 
-/* Botón azul: Perfil */
+/* Botón azul: Del Perfil */
 .btn-perfil {
     background-color: #1586EF;
     color: white;
@@ -358,6 +351,9 @@ h1, h2, h3, h4 {
 }
 
 
+/*------------------------------*/
+/*            Mensajes          */
+/*------------------------------*/
 /* Estilo para mensajes de error */
 .mensaje-error {
     background-color: #ffe0e0;
