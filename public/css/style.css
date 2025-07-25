@@ -1,0 +1,437 @@
+/* =======================
+   FUENTE GLOBAL Y BASE
+======================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    background-color: #ffffff; /* Fondo blanco */
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados generales */
+h1, h2, h3, h4 {
+    color: #111827;
+    margin: 0;
+}
+
+/* =======================
+   SPLASH SCREEN
+======================= */
+.splash-container {
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Logo tipo cerebro */
+.logo {
+    width: 160px;
+    max-width: 60%;
+    margin-bottom: 2rem;
+}
+
+/* Texto "BIENVENIDO A" */
+.bienvenido {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    color: #1e293b;
+    margin-bottom: 0.6rem;
+}
+
+/* Título principal "who am i?" */
+.nombre-app {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #111827;
+    margin-bottom: 2.5rem;
+}
+
+/* Botón azul principal */
+.btn-principal {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #1586EF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover del botón */
+.btn-principal:hover {
+    background-color: #2563eb;
+}
+
+/* =======================
+   FLECHA DE REGRESO
+======================= */
+.flecha {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: #1586EF;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.flecha:hover {
+    color: #1e40af;
+}
+
+/* Flecha redonda a la izquierda */
+.btn-flecha {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 42px;
+    height: 42px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.btn-flecha:hover {
+    background-color: #111;
+}
+
+.icono-flecha {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* =======================
+   CENTRADO GENERAL
+======================= */
+.centered {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =======================
+   BOTONES DE USUARIO
+======================= */
+.botones-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Botón lavanda: Iniciar sesión */
+.btn-cuidador {
+    background-color: #d8b4fe;
+    color: #111827;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Botón azul cielo: Regístrate */
+.btn-consultante {
+    background-color: #1586EF;
+    color: #111827;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Separador "O" entre botones */
+.separador {
+    text-align: center;
+    font-weight: bold;
+    color: #111827;
+}
+
+/* =======================
+   TÍTULOS DE SECCIÓN
+======================= */
+.titulo-seccion {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #1f2937;
+    margin-bottom: 2rem;
+}
+
+/* =======================
+   FORMULARIOS REGISTRO
+======================= */
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+}
+
+.formulario-registro input[type="text"],
+.formulario-registro input[type="date"],
+.formulario-registro input[type="password"],
+.formulario-registro input[type="email"] {
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formulario-registro input:focus {
+    border-color: #1586EF;
+}
+
+/* Etiquetas (labels) arriba de los inputs */
+.formulario-registro label {
+    display: block;
+    margin-bottom: 0.4rem;
+    margin-left: 0.2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #111827;
+    text-align: left;
+}
+
+/* ----------------------------
+   BOTONES CON ÍCONOS CENTRADOS
+----------------------------- */
+.botones-usuario a {
+    display: flex;
+    align-items: center;           /* Centrado vertical */
+    justify-content: center;       /* Centrado horizontal */
+    gap: 0.8rem;                   /* Separación ícono-texto */
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra ligera inicial */
+}
+
+/* Estilo específico para cuidador */
+.btn-cuidador {
+    background-color: #d8b4fe;
+    color: #111827;
+}
+
+.btn-cuidador:hover,
+.btn-cuidador:focus {
+    background-color: #c084fc;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(168, 85, 247, 0.3); /* Sombra al hacer hover */
+}
+
+.btn-cuidador:hover i,
+.btn-cuidador:focus i {
+    animation: bounceIcon 0.4s ease;
+}
+
+/* Estilo específico para consultante */
+.btn-consultante {
+    background-color: #bae6fd;
+    color: #111827;
+}
+
+.btn-consultante:hover,
+.btn-consultante:focus {
+    background-color: #7dd3fc;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
+}
+
+.btn-consultante:hover i,
+.btn-consultante:focus i {
+    animation: bounceIcon 0.4s ease;
+}
+
+/* Estilo de los íconos */
+.botones-usuario a i {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-ajustes {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1f2937;
+    z-index: 100;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.btn-ajustes:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/*------------------------------*/
+/*            Iconos            */
+/*------------------------------*/
+
+
+/* Estilos generales para íconos */
+.ajustes-opciones a i {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Botón azul: Perfil */
+.btn-perfil {
+    background-color: #1586EF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-perfil:hover,
+.btn-perfil:focus {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+/* Botón rojo: Cerrar sesión */
+.btn-logout {
+    background-color: #FF9FA1;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover,
+.btn-logout:focus {
+    background-color: #b44545;
+    color: white;
+}
+
+
+/* Estilo para mensajes de error */
+.mensaje-error {
+    background-color: #ffe0e0;
+    color: #c00;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mensaje-exito {
+    background-color: #d1f7d1;
+    color: #247a24;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.mensaje-error {
+    background-color: #ffe0e0;
+    color: #b00000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.mensaje-error ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.mensaje-info {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 480px) {
+    .logo {
+        width: 120px;
+    }
+
+    .nombre-app {
+        font-size: 2.2rem;
+    }
+
+    .bienvenido {
+        font-size: 1rem;
+    }
+
+    .btn-principal {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 0.9rem 1rem;
+    }
+
+    .titulo-seccion {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .btn-cuidador,
+    .btn-consultante {
+        font-size: 1rem;
+    }
+}
+
+
